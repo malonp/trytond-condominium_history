@@ -26,8 +26,7 @@ from trytond.pool import PoolMeta
 __all__ = ['CondoFactors', 'CondoParty', 'Unit', 'UnitFactor']
 
 
-class CondoFactors:
-    __metaclass__ = PoolMeta
+class CondoFactors(metaclass=PoolMeta):
     __name__ = 'condo.factor'
 
     @classmethod
@@ -36,8 +35,7 @@ class CondoFactors:
         cls._history = True
 
 
-class CondoParty:
-    __metaclass__ = PoolMeta
+class CondoParty(metaclass=PoolMeta):
     __name__ = 'condo.party'
 
     @classmethod
@@ -46,8 +44,7 @@ class CondoParty:
         cls._history = True
 
 
-class Unit:
-    __metaclass__ = PoolMeta
+class Unit(metaclass=PoolMeta):
     __name__ = 'condo.unit'
 
     @classmethod
@@ -56,8 +53,7 @@ class Unit:
         cls._history = True
 
 
-class UnitFactor:
-    __metaclass__ = PoolMeta
+class UnitFactor(metaclass=PoolMeta):
     __name__ = 'condo.unit-factor'
 
     @classmethod
