@@ -23,7 +23,7 @@
 from trytond.pool import PoolMeta
 
 
-__all__ = ['CondoFactors', 'CondoParty', 'Unit', 'UnitFactor']
+__all__ = ['CondoFactors', 'CondoParty', 'Factor', 'Unit']
 
 
 class CondoFactors(metaclass=PoolMeta):
@@ -53,10 +53,10 @@ class Unit(metaclass=PoolMeta):
         cls._history = True
 
 
-class UnitFactor(metaclass=PoolMeta):
+class Factor(metaclass=PoolMeta):
     __name__ = 'condo.unit-factor'
 
     @classmethod
     def __setup__(cls):
-        super(UnitFactor, cls).__setup__()
+        super(Factor, cls).__setup__()
         cls._history = True
