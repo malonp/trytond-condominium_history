@@ -25,9 +25,4 @@ from .condominium import *
 
 
 def register():
-    Pool.register(
-        CondoFactors,
-        CondoParty,
-        Unit,
-        UnitFactor,
-        module='condominium_history', type_='model')
+    Pool.register(CondoFactors, CondoParty, Factor, Unit, module='condominium_history', type_='model')
